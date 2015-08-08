@@ -1,0 +1,21 @@
+<script>
+    var _addScript = function(src, main) {
+        var script = document.createElement('script');
+        script.src = src + '?r=' + (new Date()).getUTCMilliseconds();
+        script.async = false;
+        if (main){
+            script.setAttribute('data-main', main);
+        }
+        document.getElementsByTagName('head')[0].appendChild(script);
+    }
+
+    if (window.ENV == 'prod') {
+        _addScript('vendor/requirejs/require.js');
+        _addScript('js/vendors.js');
+        _addScript('js/app.js');
+    } else {
+        _addScript('vendor/requirejs/require.js', 'app/boot');
+    }
+</script>
+</body>
+</html>

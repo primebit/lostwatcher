@@ -1,0 +1,34 @@
+{
+  "name": "lostwatcher",
+  "version": "0.0.1",
+  "authors": [
+    "primebit <redlinesoft@yandex.ru>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "*",
+    "requirejs-text": "*",
+    "requirejs-angular-loader": "*",
+    "bootstrap": "~3.3",
+    "angularjs": "~1.4.3",
+    "angular-material": "*",
+    "angular-cookies": "~1.4.3",
+    "angular-resource": "~1.4.3",
+    "ngstorage": "0.3.0",
+    "angular-ui-router": "~0.2.11",
+    "angular-translate": "~2.4.2",
+    "angular-translate-storage-local": "~2.4.2",
+    "angular-translate-loader-static-files": "~2.4.2",
+    "angular-translate-interpolation-messageformat": "~2.4.2",
+    "angular-i18n": "*",
+    "angular-dynamic-locale": "*"
+  }
+}
